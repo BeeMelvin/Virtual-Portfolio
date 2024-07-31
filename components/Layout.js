@@ -11,8 +11,17 @@ import Nav from '../components/Nav';
 import Header from'../components/Header';
 import TopleftImg from '../components/TopLeftImg';
 
-const Layout = () => {
-  return <div>Layout</div>;
+const Layout = ({ children }) => {
+  return (
+  <div 
+  className = {'page bg-site text-white bg-cover bg-no-repeatm ${sora.variable} font-sora relative'}>
+    <TopleftImg />
+    <Nav />
+    <Header />
+    {children}
+
+  </div>
+  );
 };
 
 export default Layout;
