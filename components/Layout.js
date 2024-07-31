@@ -7,6 +7,10 @@ const sora = Sora({
   weight: ['100','200','300','400','500','600','700','800'],
 });
 // componnents
+import Nav from '../components/Nav';
+import Header from'../components/Header';
+import TopleftImg from '../components/TopLeftImg';
+
 const Layout = () => {
   return <div>Layout</div>;
 };
