@@ -6,7 +6,7 @@ const sora = Sora({
   variable: '--font-sora',
   weight: ['100','200','300','400','500','600','700','800'],
 });
-//
+// componnets
 const Layout = () => {
   return <div>Layout</div>;
 };
