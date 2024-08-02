@@ -26,8 +26,8 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Transforming Ideas <br /> Into{' '}
-            <span className='text-accent'>Digital Reality</span>
+            Where Creativity  <br /> Meets{' '}
+            <span className='text-accent'>Technology</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,9 +37,12 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            As a motivated and enthusiastic junior software engineer, 
+            I am passionate about transforming innovative ideas into functional and efficient digital solutions. 
+            With a solid foundation in web development and programming languages,
+             I am eager to apply my skills to real-world projects. 
+             
+              
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
