@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 // icons
 import {
   FaHtml5,
@@ -7,7 +6,6 @@ import {
   FaJs,
   FaReact,
   FaFigma,
-  
 } from 'react-icons/fa';
 
 import {
@@ -21,7 +19,7 @@ import {
   SiPython,
 } from 'react-icons/si';
 
-//  about data
+// about data
 export const aboutData = [
   {
     title: 'skills',
@@ -29,36 +27,31 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="nextjs" />,
+          <SiFramer key="framer" />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobexd" />, <SiAdobephotoshop key="photoshop" />],
       },
       {
         title: 'Programming Languages',
-        icons: [<FaJs />, <SiCsharp />, <SiPython />],
+        icons: [<FaJs key="js-lang" />, <SiCsharp key="csharp" />, <SiPython key="python" />],
       },
-
       {
         title: 'Office Tools',
-        icons: [ <SiMicrosoftword/>, <SiMicrosoftexcel />],
+        icons: [<SiMicrosoftword key="word" />, <SiMicrosoftexcel key="excel" />],
       },
-      
     ],
   },
- 
   {
     title: 'experience',
     info: [
-     
       {
         title: 'Intern - NWU Student Life Campus',
         stage: '2024 - current',
@@ -68,14 +61,12 @@ export const aboutData = [
   {
     title: 'Education',
     info: [
-     
       {
         title: 'North West University',
         stage: '2022 - current',
       },
     ],
   },
- 
 ];
 
 // components
@@ -125,10 +116,10 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-             I enrolled in an Information Technology course and instantly fell in love with it.
-              My curiosity about how computers and applications work was finally satisfied. 
-              I started working on projects, applying what I learned, and continuously growing my skills.
-               I’m passionate about creating innovative solutions and excited to contribute to the tech world.
+            I enrolled in an Information Technology course and instantly fell in love with it.
+            My curiosity about how computers and applications work was finally satisfied. 
+            I started working on projects, applying what I learned, and continuously growing my skills.
+            I’m passionate about creating innovative solutions and excited to contribute to the tech world.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -148,7 +139,6 @@ const About = () => {
                   Years of experience
                 </div>
               </div>
-         
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
@@ -158,7 +148,6 @@ const About = () => {
                   Projects
                 </div>
               </div>
-              
             </div>
           </motion.div>
         </div>
@@ -175,6 +164,8 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
+                  role="button"
+                  aria-selected={index === itemIndex}
                   className={`${
                     index === itemIndex &&
                     'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
@@ -199,8 +190,8 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className='flex gap-x-4'>
                     {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                    {item.icons?.map((icon, iconIndex) => {
+                      return <div key={iconIndex} className='text-2xl text-white'>{icon}</div>;
                     })}
                   </div>
                 </div>
