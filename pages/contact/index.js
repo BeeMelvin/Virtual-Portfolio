@@ -2,7 +2,7 @@
 import Circles from '/components/Circles';
 
 // icons
-import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowRight, BsTelephone, BsEnvelope, BsGeoAlt } from 'react-icons/bs';
 
 // framer
 import { motion } from 'framer-motion';
@@ -24,7 +24,7 @@ const Contact = () => {
             exit='hidden'
             className='h2 text-center mb-12'
           >
-            Contact <span className='text-accent'>Me.</span>
+            Connect With <span className='text-accent'>Me.</span>
           </motion.h2>
           {/* form */}
           <motion.form
@@ -48,6 +48,27 @@ const Contact = () => {
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
             </button>
           </motion.form>
+          {/* contact details */}
+          <motion.div
+            variants={fadeIn('up', 0.6)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='mt-12 text-left'
+          >
+            <div className='flex items-center mb-4'>
+              <BsTelephone className='text-accent mr-4' />
+              <span>0671457497</span>
+            </div>
+            <div className='flex items-center mb-4'>
+              <BsEnvelope className='text-accent mr-4' />
+              <span>Boikanyo Malepe</span>
+            </div>
+            <div className='flex items-center'>
+              <BsGeoAlt className='text-accent mr-4' />
+              <span>South Africa, NW</span>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

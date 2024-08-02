@@ -6,7 +6,6 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
   
 } from 'react-icons/fa';
@@ -63,6 +62,16 @@ export const aboutData = [
       {
         title: 'Intern - NWU Student Life Campus',
         stage: '2024 - current',
+      },
+    ],
+  },
+  {
+    title: 'Education',
+    info: [
+     
+      {
+        title: 'North West University',
+        stage: '2022 - current',
       },
     ],
   },
