@@ -28,7 +28,7 @@ import Link from 'next/link'
 //next router
 import { useRouter } from 'next/router';
 
-import classNames from 'classNames';
+import classNames from 'classnames';
 const Nav = () => {
   const router =useRouter();
   const pathname = router.pathname;
