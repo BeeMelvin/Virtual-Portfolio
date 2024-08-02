@@ -115,8 +115,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth
-            magnificent designs.
+            IT enthusiastic with a <span className='text-accent'>Passion</span> for
+            Innovation and Development.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -152,7 +152,7 @@ const About = () => {
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={2} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                   Projects

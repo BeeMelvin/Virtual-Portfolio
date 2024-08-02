@@ -13,7 +13,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className='fixed top-4 right-4 flex flex-col gap-5 md:flex-row md:gap-x-5 md:top-8 md:right-8'>
+    <div className='fixed top-4 right-4 flex flex-col gap-5 md:flex-row md:gap-x-5 md:top-8 md:left-8'>
       <Link href={'https://youtube.com/@beekay_sa?si=CSgyYaAeZckvFf6n'} className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>

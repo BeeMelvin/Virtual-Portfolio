@@ -1,5 +1,5 @@
-// components
-import Circles from '/components/Circles';
+
+
 
 // icons
 import { BsArrowRight, BsTelephone, BsEnvelope, BsGeoAlt } from 'react-icons/bs';
@@ -9,6 +9,8 @@ import { motion } from 'framer-motion';
 
 // variants
 import { fadeIn } from '../../variants';
+
+
 
 const Contact = () => {
   return (
@@ -66,7 +68,7 @@ const Contact = () => {
             </div>
             <div className='flex items-center'>
               <BsGeoAlt className='text-accent mr-4' />
-              <span>South Africa, NW</span>
+              <span>South Africa,</span>
             </div>
           </motion.div>
         </div>
