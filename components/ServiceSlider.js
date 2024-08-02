@@ -11,8 +11,7 @@ import {
   RxCrop,
   RxDesktop,
   RxPencil2,
-  RxReader,
-  RxRocket,
+  
   RxArrowTopRight,
 } from 'react-icons/rx';
 
@@ -23,29 +22,20 @@ import { FreeMode, Pagination } from 'swiper';
 export const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Web Development',
+    description: ' As a web developer, I focus on creating visually appealing, user-friendly websites that meet client specifications and provide a seamless user experience',
+  },
+  {
+    icon: <RxDesktop />,
+    title: 'Application Development',
+    description: ' My goal is to create functional, scalable, and secure applications that enhance user productivity and satisfaction.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Designing encompasses the creation of visual content to communicate messages. As a designer, I focus on creating aesthetically pleasing and functional designs that enhance user experience and engagement.',
   },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+  
 ];
 
 const ServiceSlider = () => {

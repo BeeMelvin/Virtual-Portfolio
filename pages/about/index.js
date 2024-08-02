@@ -88,11 +88,11 @@ const About = () => {
       <Circles />
       {/* avatar img */}
       <motion.div
-        variants={fadeIn('right', 0.2)}
+        variants={fadeIn('right', 0.3)}
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[370px]'
+        className='hidden xl:flex absolute bottom-0 -left-[300px]'
       >
         <Avatar />
       </motion.div>
@@ -116,9 +116,10 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+             I enrolled in an Information Technology course and instantly fell in love with it.
+              My curiosity about how computers and applications work was finally satisfied. 
+              I started working on projects, applying what I learned, and continuously growing my skills.
+               I’m passionate about creating innovative solutions and excited to contribute to the tech world.
           </motion.p>
           {/* counters */}
           <motion.div

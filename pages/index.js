@@ -26,8 +26,8 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Where Creativity  <br /> Meets{' '}
-            <span className='text-accent'>Technology</span>
+            Boikanyo  <br /> Melvin{' '}
+            <span className='text-accent'>Malepe</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -41,8 +41,6 @@ const Home = () => {
             I am passionate about transforming innovative ideas into functional and efficient digital solutions. 
             With a solid foundation in web development and programming languages,
              I am eager to apply my skills to real-world projects. 
-             
-              
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
@@ -77,8 +75,14 @@ const Home = () => {
           <Avatar />
         </motion.div>
       </div>
+      {/* sections */}
+      <section id="about" className="h-screen bg-gray-200">About Section</section>
+      <section id="services" className="h-screen bg-gray-300">Services Section</section>
+  
+      <section id="contact" className="h-screen bg-gray-500">Contact Section</section>
     </div>
   );
 };
 
 export default Home;
+

@@ -9,22 +9,14 @@ import Socials from '../components/Socials';
 
 const Header = () => {
   return (
-    <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8'>
-          {/* logo */}
-          <Link href={'/'}>
-            <Image
-              src={'/Bee.png'}
-              width={220}
-              height={48}
-              alt=''
-              priority={true}
-            />
-          </Link>
-          {/* socials */}
-          <Socials />
-        </div>
+    <header className='fixed z-30 w-full flex justify-between items-center px-4 md:px-16 xl:px-0 xl:h-[90px] top-0'>
+      <div className='container mx-auto flex justify-between items-center'>
+        {/* logo */}
+        <Link href={'/'}>
+          
+        </Link>
+        {/* socials */}
+        <Socials />
       </div>
     </header>
   );

@@ -6,14 +6,14 @@ import {
   RiYoutubeLine,
   RiInstagramLine,
   RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
+  RiLinkedinLine,
+  RiGithubLine,
+ 
 } from 'react-icons/ri';
 
 const Socials = () => {
   return (
-    <div className='flex items-center gap-x-5 text-lg'>
+    <div className='fixed top-4 right-4 flex flex-col gap-5 md:flex-row md:gap-x-5 md:top-8 md:right-8'>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>
@@ -24,14 +24,12 @@ const Socials = () => {
         <RiInstagramLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiDribbbleLine />
+        <RiLinkedinLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiBehanceLine />
+        <RiGithubLine/>
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiPinterestLine />
-      </Link>
+     
     </div>
   );
 };
